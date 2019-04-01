@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 style="position: absolute; left:285px">De you love me?</h1>
+<input type="button" value=" YES " onclick="clickYes()" style="position:absolute; left:285px; top:235px;"/>
+<input type="button" id="numNo" value="  NO  " onmouseover="clickNo()" style="position:absolute; left:360px; top:235px;"/>
+
+<script>
+    let numNo = null;
+    numNo = document.getElementById("numNo");
+    function clickYes() {
+        alert("<3");
+    }
+
+    function clickNo() {
+        numNo.style.left = Math.floor(Math.random() * window.innerWidth) + 'px';
+        numNo.style.top = Math.floor(Math.random() * window.innerHeight) + 'px';
+    }
+
+</script>
+
+
+
+</body>
+</html>
